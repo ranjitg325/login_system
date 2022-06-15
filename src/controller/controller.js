@@ -1,6 +1,7 @@
 const userModel = require("../model/model.js")
 const bcrypt = require("bcrypt")
-const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken")
+const emailValidator = require('validator')
 const mongoose = require("mongoose")
 const isValidObjectId = (objectId) => mongoose.Types.ObjectId.isValid(objectId)
 
